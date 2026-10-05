@@ -181,7 +181,7 @@ def train_and_evaluate(
     min_val = min(y_test.min(), y_pred.min())
     max_val = max(y_test.max(), y_pred.max())
     plt.plot([min_val, max_val], [min_val, max_val], "r--", linewidth=2, label="Ideal Fit (y = x)")
-    plt.title(f"Actual vs Predicted Admission Chance (R² = {r2:.2f})", fontsize=13, fontweight="bold")
+    plt.title(f"Actual vs Predicted Admission Chance (R2 = {r2:.2f})", fontsize=13, fontweight="bold")
     plt.xlabel("Actual Chance of Admit", fontsize=11)
     plt.ylabel("Predicted Chance of Admit", fontsize=11)
     plt.legend(fontsize=11)
